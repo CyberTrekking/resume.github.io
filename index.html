@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow, noarchive">
+    <!-- 升级robots，增加noai、noimageai，禁止AI训练抓取 -->
+    <meta name="robots" content="noindex, nofollow, noarchive, noai, noimageai">
     <title>姜国勇 | 个人简历</title>
     <style>
         * {
@@ -32,7 +33,7 @@
             gap: 40px;
             padding: 52px 60px;
             background: linear-gradient(135deg,#1e293b 0%,#0f172a 100%);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
+            border-bottom:1px solid rgba(255,255,255,0.08);
         }
         .avatar-wrap img {
             width: 180px;
@@ -65,6 +66,26 @@
             align-items:center;
             gap:6px;
         }
+        /* =========手机号hover样式========= */
+        .phone-hover {
+            position:relative;
+            display:inline-block;
+            width:140px;
+            cursor:pointer;
+        }
+        .phone-hover > span:nth-child(2){
+            display:none;
+            position:absolute;
+            left:0;
+            top:0;
+        }
+        .phone-hover:hover > span:nth-child(1){
+            display:none;
+        }
+        .phone-hover:hover > span:nth-child(2){
+            display:inline;
+        }
+        /* ================================= */
         .content-container {
             padding:44px 60px;
         }
@@ -190,10 +211,10 @@
             <h1>姜国勇</h1>
             <div class="header-position">市场拓展 & 渠道运营</div>
             <div class="contact-bar">
-                <span style="position:relative;display:inline-block;">
-  <span>📞 173 **** 8788</span>
-  <span style="position:absolute;left:0;top:0;display:none;">📞 173 4757 8788</span>
-</span>
+                <span class="phone-hover">
+                    <span>📞 173 **** 8788</span>
+                    <span>📞 173 4757 8788</span>
+                </span>
                 <span>✉️ job@jiangguoyong.com</span>
                 <span>📍 深圳·龙岗（祖籍黑龙江）</span>
             </div>
@@ -206,7 +227,6 @@
                 ESTJ｜双子座。兼具理性决策与感性共情，为人正直真诚。拥有多年职场就业与合伙创业实战经历，具备极强抗压能力与环境适应力，可以快速融入各类业务团队。持续保持对新兴事物的敏锐洞察，保持资讯阅读习惯；具备成熟团队协作、赋能与综合管理能力。
             </div>
         </div>
-
         <div class="section-block">
             <h2 class="section-title">专业技能 SKILLS</h2>
             <div class="skill-tags-group">
@@ -218,10 +238,8 @@
                 <span class="skill-tag">Photoshop</span>
             </div>
         </div>
-
         <div class="section-block">
             <h2 class="section-title">工作经历 EXPERIENCE</h2>
-
             <div class="job-item">
                 <div class="job-head">
                     <div class="job-title-main">渠道销售</div>
@@ -236,7 +254,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="job-item">
                 <div class="job-head">
                     <div class="job-title-main">高级拓展专员</div>
@@ -251,7 +268,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="job-item">
                 <div class="job-head">
                     <div class="job-title-main">省区拓展经理 / 市场助理</div>
@@ -266,7 +282,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="job-item">
                 <div class="job-head">
                     <div class="job-title-main">合伙人 / 市场经理</div>
@@ -280,7 +295,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="job-item">
                 <div class="job-head">
                     <div class="job-title-main">市场推广</div>
@@ -294,7 +308,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="job-item">
                 <div class="job-head">
                     <div class="job-title-main">总助兼行政 / 运营 / IT技术支持</div>
@@ -312,7 +325,6 @@
                 </div>
             </div>
         </div>
-
         <div class="section-block">
             <h2 class="section-title">教育背景 EDUCATION</h2>
             <div class="edu-row">西安翻译学院｜国际贸易｜本科</div>
